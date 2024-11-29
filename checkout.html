@@ -55,32 +55,32 @@
             </figure>
         </section>
 
-        <section id="personopplysninger">
-            <h2>Personopplysninger</h2>
-            
-            <form action="#" method="post">
-                <!-- Fornavn -->
-                <label for="fornavn">Fornavn:</label>
-                <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn" required> <!--gjør dette riktig...-->
-    
-                <!-- Etternavn -->
-                <label for="etternavn">Etternavn:</label>
-                <input type="text" id="etternavn" name="etternavn" placeholder="Etternavn" required>
-    
-                <!-- Gateadresse -->
-                <label for="gateadresse">Gateadresse:</label>
-                <input type="text" id="gateadresse" name="gateadresse" placeholder="Gateadresse" required>
-    
-                <!-- Postnummer -->
-                <label for="postnummer">Postnummer:</label>
-                <input type="text" id="postnummer" name="postnummer" placeholder="Postnummer" pattern="\d{4}" required>
-    
-                <!-- Poststed -->
-                <label for="poststed">Poststed:</label>
-                <input type="text" id="poststed" name="poststed" placeholder="Poststed" required>
-    
-                <!-- Lagre og avbryt knapper -->
-                <button type="submit">Lagre</button>
-                <button type="reset">Avbryt</button>
-            </form>
-        </section>
+        <h2>Betal med kort</h2> 
+        <form>
+            <label>
+                Fornavn
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Nora.."> 
+                <!-- Tekstfelt for navn, med et mønster som godtar bokstaver og mellomrom (minimum 2 tegn) og som er påkrevd -->
+            </label>
+
+            <label>
+                Etternavn
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Nordman.."> 
+                <!-- Tekstfelt for navn, med et mønster som godtar bokstaver og mellomrom (minimum 2 tegn) og som er påkrevd -->
+            </label>   
+
+            <label>
+                Gateadresse:
+                <input type="text" required placeholder="Hovedgata 123" title="Skriv inn din gateadresse.">
+            </label>
+
+            <label>
+                Postnummer:
+                <input type="text" pattern="\d{4}" required placeholder="1234" title="Postnummer må være 4 sifre.">
+            </label>
+
+            <label>
+                Poststed:
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Oslo" title="Skriv inn et gyldig poststed med minst 2 tegn.">
+            </label>
+        </form>
