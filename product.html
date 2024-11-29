@@ -12,7 +12,7 @@
                 <input type="text" id="search" placeholder="Søk...">
                 <button id="search-btn" type="submit">Søk</button>
             </form><!--mangler ikonene-->
-            
+
             <nav>
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
@@ -23,3 +23,39 @@
                 </ul>
             </nav>
         </header>
+
+        <nav aria-label="Brødsmulesti">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#kategori">Kategori</a></li>
+                <li>Produktnavn</li> 
+            </ul>
+        </nav>
+
+        <section id="produkt_info">
+            <figure id="stort_image">
+                <img src="https://picsum.photos/400/400" alt="Stort produktbilde">
+            </figure>
+    
+            <section id="mindre_images">
+                <figure>
+                    <img src="https://picsum.photos/200/200" alt="Produktbilde 1">
+                </figure>
+                <figure>
+                    <img src="https://picsum.photos/200/200" alt="Produktbilde 2">
+                </figure>
+                <figure>
+                    <img src="https://picsum.photos/200/200" alt="Produktbilde 3">
+                </figure>
+            </section>
+
+            <section id="produkt_detaljer">
+                <h1>Produktnavn</h1>
+                <p>Merke: <a href="#">Merke-link</a></p> <!--dobbeltskjekk-->
+                
+                <section id="produkt_info_2">
+                    <p>Pris: 5 195 kr ink. mva</p>
+                    <p>Farge: <span>Beige</span></p>
+                </section>
+            </section>
+        </main>
