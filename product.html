@@ -1,10 +1,10 @@
-<!DOCTYPE html>
 <html lang="nb">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Forside</title>
         <link href="style.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -12,32 +12,39 @@
                 <input type="text" id="search" placeholder="Søk...">
                 <button id="search-btn" type="submit">Søk</button>
             </form><!--mangler ikonene-->
-
+    
             <nav>
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
-                    <li><a href="#poplære_produkter">Produkter</a></li>
+                    <li><a href="#populære_produkter">Produkter</a></li>
                     <li><a href="index.html" id="logo">LOGO</a></li>
                     <li><a href="#populære_kategorier">Kategorier</a></li> <!--HUSK Å Rette DETTE NÅR JEG KOMMER HIT-->
-                    <li><a href="#kontakt">Kontakt oss</a></li>
                 </ul>
+                <ul class="icon-list">
+                    <li><i class="fa-regular fa-user"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                  </ul>
             </nav>
         </header>
 
-        <nav aria-label="Brødsmulesti">
+        <nav aria-label="Brødsmulesti"> <!--https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
             <ul class="breadcrumb">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#kategori">Kategori</a></li>
                 <li>Produktnavn</li> 
             </ul>
         </nav>
-
-        <section id="produkt_info">
+        <main>
+            <section id="produkt_info">
+                <h2>Produktbilde</h2>
             <figure id="stort_image">
                 <img src="https://picsum.photos/400/400" alt="Stort produktbilde">
             </figure>
+            </section>
     
             <section id="mindre_images">
+                <h2>Produktbilder</h2>
                 <figure>
                     <img src="https://picsum.photos/200/200" alt="Produktbilde 1">
                 </figure>
@@ -115,7 +122,7 @@
         <footer>
             <section>
                 <h2 id="footer-logo">LOGO</h2>
-                <p>LOREM IPSUM LOREN OPSUM IPSUM LOREN LOREM IPSUM</p> <!--Legg inn ordneltig lorem ipsum-->
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Commodo maximus blandit ullamcorper pellentesque nascetur sollicitudin sociosqu? Vehicula</p> <!--Legg inn ordneltig lorem ipsum-->
             </section>
 
             <section id="kontakt">

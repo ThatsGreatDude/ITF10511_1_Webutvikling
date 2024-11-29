@@ -1,10 +1,10 @@
-<!DOCTYPE html>
 <html lang="nb">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Forside</title>
         <link href="style.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -16,50 +16,48 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
-                    <li><a href="#poplære_produkter">Produkter</a></li>
+                    <li><a href="#populære_produkter">Produkter</a></li>
                     <li><a href="index.html" id="logo">LOGO</a></li>
                     <li><a href="#populære_kategorier">Kategorier</a></li> <!--HUSK Å Rette DETTE NÅR JEG KOMMER HIT-->
-                    <li><a href="#kontakt">Kontakt oss</a></li>
                 </ul>
+                <ul class="icon-list">
+                    <li><i class="fa-regular fa-user"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                  </ul>
             </nav>
         </header>
 
         <section id="shoppingbag">
             <h2>1. SHOPPINGBAGGEN DIN</h2>
             
-            <figure class="produkt_kort">
-                <img src="https://picsum.photos/200/200" alt="Produkt 1">
-                <figcaption>
-                    <h3>Product name</h3>
-                    <p>Kr 1999</p>
-                    <p>Farge: beige/p>
-                </figcaption>
-            </figure>
-    
-            <figure class="produkt_kort">
-                <img src="https://picsum.photos/200/200" alt="Produkt 2">
-                <figcaption>
-                    <h3>Product name</h3>
-                    <p>Kr 1999</p>
-                    <p>Farge: beige</p>
-                </figcaption>
-            </figure>
+            <article class="produkt_kort"> <!--Fikk hjelp av chatgpt på produktkort. Prompt var "Jeg kan bruke "https://picsum.photos/200/200". Seksjon 1 (Shoppingbagen): Denne seksjonen skal holde på minimum 2 produktkort, et produktkort skal inneholde: et bilde, produktnavn, pris og farge. (mer innehold inkluderes på høyere karakternivå).. Det skal ikke være noen div"-->
+              <img src="https://picsum.photos/200/200" alt="Produktbilde" class="product-image">
+              <h3 class="product-name">Produkt 1</h3>
+                <p class="product-price">Kr. 1999</p>
+               <p class="product-color">Farge: Beige</p>
+             </article>
 
-            <figure class="produkt_kort">
-                <img src="https://picsum.photos/200/200" alt="Produkt 3">
-                <figcaption>
-                    <h3>Product name</h3>
-                    <p>Kr 1999</p>
-                    <p>Farge: beige</p>
-                </figcaption>
-            </figure>
+             <article class="produkt_kort">
+                <img src="https://picsum.photos/200/200" alt="Produktbilde" class="product-image">
+                <h3 class="product-name">Produkt 1</h3>
+                  <p class="product-price">Kr. 1999</p>
+                 <p class="product-color">Farge: Beige</p>
+               </article>
+
+               <article class="produkt_kort">
+                <img src="https://picsum.photos/200/200" alt="Produktbilde" class="product-image">
+                <h3 class="product-name">Produkt 1</h3>
+                  <p class="product-price">Kr. 1999</p>
+                 <p class="product-color">Farge: Beige</p>
+               </article>
         </section>
 
         <section>
             <h2>2. DINE OPPLYSNINGER</h2> 
             <p>Leveringsadresse</p>
             <form>
-                <label>
+                <label> <!--Sett på fra øvelse 3, registrering.html (linje61-89)-->
                     Fornavn
                     <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}"> 
                 </label>
@@ -84,8 +82,8 @@
                     <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}">
                 </label>
     
-                <button type="submit">Lagre</button>
-                <button type="reset">Avbryt</button>
+                <button type="submit" value="Submit">Lagre</button> <!--https://www.w3schools.com/tags/att_button_type.asp-->
+                <button type="reset" value="Reset">Avbryt</button>
             </form>
         </section>
 
@@ -93,8 +91,8 @@
             <h2>3. LEVERING</h2> 
             <p>LEVERINGSVALG</p>
 
-            <form>
-                <fieldset>
+            <form> 
+                <fieldset> <!--Sett på fra øvelse 3, registrering.html(linje96-111)-->
                   <label>
                     <input type="radio" name="levering" value="express-hjemlevering">
                     Express Hjemlevering
@@ -128,7 +126,7 @@
               
                   <p>Å betale inkl. mva.<br>1 199 kr</p>
               
-                  <button type="submit">Fullfør kjøp</button>
+                  <button type="submit" value="Submit">Fullfør kjøp</button>
               
                   <p>
                     Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
@@ -147,4 +145,40 @@
                 </fieldset>
               </form>
         </section>
-        
+
+        <footer>
+            <section>
+                <h2 id="footer-logo">LOGO</h2>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Commodo maximus blandit ullamcorper pellentesque nascetur sollicitudin sociosqu? Vehicula</p> <!--Legg inn ordneltig lorem ipsum-->
+            </section>
+
+            <section id="kontakt">
+                <h3>Kontakt</h3>
+                <p>Adresse: B R A veien 4</p>
+                <p>Telefon: 69 60 80 00</p>
+                <p>E-post: postmottak@hiof.no</p>
+                <p>Åpningstider: 08.00-15.00</p>
+            </section>
+
+            <section>
+                <h3>SNARVEIER</h3>
+                <ul>
+                    <li><a href="#poplære_produkter">Produkter</a></li> <!--Dobbeltskjekk disse-->
+                    <li><a href="#populære_kategorier">Kategorier</a></li>
+                    <li><a href="#kontakt">Kontakt oss</a></li>
+                    <li><a href="tilgjengelighetserklaering.pdf" target="_blank" rel="noopener noreferrer">Tilgjengelighetserklæring</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>SOSIALE MEDIER</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li> <!--Fikk hjelp av chatgpt på denne linejn-->
+                </ul>
+            </section>
+        </footer>
+    </body>
+   </html>     
