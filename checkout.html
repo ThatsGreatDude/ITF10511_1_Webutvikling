@@ -25,7 +25,7 @@
         </header>
 
         <section id="shoppingbag">
-            <h2>1. Shoppingbagen din</h2>
+            <h2>1. SHOPPINGBAGGEN DIN</h2>
             
             <figure class="produkt_kort">
                 <img src="https://picsum.photos/200/200" alt="Produkt 1">
@@ -55,33 +55,59 @@
             </figure>
         </section>
 
-        <h2>Betal med kort</h2> 
-        <form>
-            <label>
-                Fornavn
-                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}"> 
-            </label>
+        <section>
+            <h2>2. DINE OPPLYSNINGER</h2> 
+            <p>Leveringsadresse</p>
+            <form>
+                <label>
+                    Fornavn
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}"> 
+                </label>
+    
+                <label>
+                    Etternavn
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}"> 
+                </label>   
+    
+                <label>
+                    Gateadresse:
+                    <input type="text" pattern="[A-Za-z0-9æøåÆØÅ\s.,/-]{5,}">
+                </label>
+    
+                <label>
+                    Postnummer:
+                    <input type="text" pattern="\d{4}">
+                </label>
+    
+                <label>
+                    Poststed:
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}">
+                </label>
+    
+                <button type="submit">Lagre</button>
+                <button type="reset">Avbryt</button>
+            </form>
+        </section>
 
-            <label>
-                Etternavn
-                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}"> 
-            </label>   
+        <section>
+            <h2>3. LEVERING</h2> 
+            <p>LEVERINGSVALG</p>
 
-            <label>
-                Gateadresse:
-                <input type="text" pattern="[A-Za-z0-9æøåÆØÅ\s.,/-]{5,}">
-            </label>
-
-            <label>
-                Postnummer:
-                <input type="text" pattern="\d{4}">
-            </label>
-
-            <label>
-                Poststed:
-                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}">
-            </label>
-
-            <button type="submit">Lagre</button>
-            <button type="reset">Avbryt</button>
-        </form>
+            <form>
+                <fieldset>
+                  <label>
+                    <input type="radio" name="levering" value="express-hjemlevering">
+                    Express Hjemlevering
+                  </label><br>
+                  <label>
+                    <input type="radio" name="levering" value="express-utleveringssted">
+                    Ekspress Pakke til utleveringssted
+                  </label><br>
+                  <label>
+                    <input type="radio" name="levering" value="standard-hjemlevering">
+                    Standard Hjemlevering
+                  </label>
+                </fieldset>
+              </form>
+              
+        </section>
