@@ -59,28 +59,29 @@
         <form>
             <label>
                 Fornavn
-                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Nora.."> 
-                <!-- Tekstfelt for navn, med et mønster som godtar bokstaver og mellomrom (minimum 2 tegn) og som er påkrevd -->
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}"> 
             </label>
 
             <label>
                 Etternavn
-                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Nordman.."> 
-                <!-- Tekstfelt for navn, med et mønster som godtar bokstaver og mellomrom (minimum 2 tegn) og som er påkrevd -->
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}"> 
             </label>   
 
             <label>
                 Gateadresse:
-                <input type="text" required placeholder="Hovedgata 123" title="Skriv inn din gateadresse.">
+                <input type="text" pattern="[A-Za-z0-9æøåÆØÅ\s.,/-]{5,}">
             </label>
 
             <label>
                 Postnummer:
-                <input type="text" pattern="\d{4}" required placeholder="1234" title="Postnummer må være 4 sifre.">
+                <input type="text" pattern="\d{4}">
             </label>
 
             <label>
                 Poststed:
-                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Oslo" title="Skriv inn et gyldig poststed med minst 2 tegn.">
+                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}">
             </label>
+
+            <button type="submit">Lagre</button>
+            <button type="reset">Avbryt</button>
         </form>
