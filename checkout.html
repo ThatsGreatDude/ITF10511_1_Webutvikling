@@ -109,5 +109,42 @@
                   </label>
                 </fieldset>
               </form>
-              
         </section>
+
+        <section>
+            <form>
+                <h2>4. BETALING</h2>
+                <p>BETAL MED KORT</p>
+                <fieldset>
+              
+                  <label for="kortnummer">Kortnummer</label><br>
+                  <input type="text" id="kortnummer" name="kortnummer" placeholder="342342****4435" required><br><br>
+              
+                  <label for="utlopsdato">Utløpsdato</label><br>
+                  <input type="date" id="utlopsdato" name="utlopsdato" required><br><br> <!--Note til meg selv, kanskje fjerne brbr siden css?-->
+              
+                  <label for="cvc">CVC/CVV</label><br>
+                  <input type="text" id="cvc" name="cvc" placeholder="CVC/CVV" required><br><br>
+              
+                  <p>Å betale inkl. mva.<br>1 199 kr</p>
+              
+                  <button type="submit">Fullfør kjøp</button>
+              
+                  <p>
+                    Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
+                    Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger 
+                    uriktige eller ufullstendige opplysninger.
+                  </p>
+                  
+                  <label>
+                    <input type="checkbox" name="vilkar" required>
+                    Ja, jeg godtar vilkårene
+                  </label><br>
+                  <label>
+                    <input type="checkbox" name="nyhetsbrev">
+                    Ja takk! Send nyhetsbrev til meg
+                  </label>
+                </fieldset>
+              </form>
+        </section>
+        
