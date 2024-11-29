@@ -54,3 +54,33 @@
                 </figcaption>
             </figure>
         </section>
+
+        <section id="personopplysninger">
+            <h2>Personopplysninger</h2>
+            
+            <form action="#" method="post">
+                <!-- Fornavn -->
+                <label for="fornavn">Fornavn:</label>
+                <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn" required> <!--gjør dette riktig...-->
+    
+                <!-- Etternavn -->
+                <label for="etternavn">Etternavn:</label>
+                <input type="text" id="etternavn" name="etternavn" placeholder="Etternavn" required>
+    
+                <!-- Gateadresse -->
+                <label for="gateadresse">Gateadresse:</label>
+                <input type="text" id="gateadresse" name="gateadresse" placeholder="Gateadresse" required>
+    
+                <!-- Postnummer -->
+                <label for="postnummer">Postnummer:</label>
+                <input type="text" id="postnummer" name="postnummer" placeholder="Postnummer" pattern="\d{4}" required>
+    
+                <!-- Poststed -->
+                <label for="poststed">Poststed:</label>
+                <input type="text" id="poststed" name="poststed" placeholder="Poststed" required>
+    
+                <!-- Lagre og avbryt knapper -->
+                <button type="submit">Lagre</button>
+                <button type="reset">Avbryt</button>
+            </form>
+        </section>
